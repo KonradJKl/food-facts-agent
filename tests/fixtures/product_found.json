@@ -1,0 +1,106 @@
+{
+  "code": "3017624010701",
+  "errors": [],
+  "product": {
+    "allergens_tags": [
+      "en:nuts"
+    ],
+    "brands": "Ferrero",
+    "categories_tags": [
+      "en:breakfasts",
+      "en:spreads",
+      "en:sweet-spreads",
+      "fr:pates-a-tartiner",
+      "en:hazelnut-spreads",
+      "en:chocolate-spreads",
+      "en:cocoa-and-hazelnuts-spreads",
+      "de:Other"
+    ],
+    "code": "3017624010701",
+    "countries_tags": [
+      "en:france",
+      "en:united-kingdom"
+    ],
+    "ingredients_analysis_tags": [
+      "en:palm-oil-content-unknown",
+      "en:vegan-status-unknown",
+      "en:vegetarian-status-unknown"
+    ],
+    "ingredients_text": "sugar, palm oil, hazelnuts, skimmed milk powder, fat reduced cocoa, emulsifier, vanillin",
+    "ingredients_text_de": "sugar, palm oil, hazelnuts, skimmed milk powder, fat reduced cocoa, emulsifier, vanillin",
+    "ingredients_text_en": "sugar, palm oil, hazelnuts (13%), skimmed milk powder (8.7%), fat reduced cocoa (7.4%), emulsifier: lecithins (soya), vanillin",
+    "labels_tags": [
+      "en:no-gluten"
+    ],
+    "nutriments": {
+      "added-sugars": 0,
+      "added-sugars_100g": 0,
+      "added-sugars_modifier": "~",
+      "added-sugars_unit": "g",
+      "added-sugars_value": 0,
+      "carbohydrates": 57.5,
+      "carbohydrates_100g": 57.5,
+      "carbohydrates_unit": "g",
+      "carbohydrates_value": 57.5,
+      "energy": 2228,
+      "energy-kcal": 539,
+      "energy-kcal_100g": 539,
+      "energy-kcal_unit": "kcal",
+      "energy-kcal_value": 539,
+      "energy-kj": 2228,
+      "energy-kj_100g": 2228,
+      "energy-kj_unit": "kJ",
+      "energy-kj_value": 2228,
+      "energy_100g": 2228,
+      "energy_unit": "kJ",
+      "energy_value": 2228,
+      "fat": 30.9,
+      "fat_100g": 30.9,
+      "fat_unit": "g",
+      "fat_value": 30.9,
+      "fruits-vegetables-legumes-estimate-from-ingredients_100g": 0,
+      "fruits-vegetables-nuts-estimate-from-ingredients_100g": 0,
+      "proteins": 6.3,
+      "proteins_100g": 6.3,
+      "proteins_unit": "g",
+      "proteins_value": 6.3,
+      "salt": 0.1075,
+      "salt_100g": 0.1075,
+      "salt_unit": "g",
+      "salt_value": 0.1075,
+      "saturated-fat": 10.6,
+      "saturated-fat_100g": 10.6,
+      "saturated-fat_unit": "g",
+      "saturated-fat_value": 10.6,
+      "sodium": 0.043,
+      "sodium_100g": 0.043,
+      "sodium_unit": "g",
+      "sodium_value": 0.043,
+      "sugars": 56.3,
+      "sugars_100g": 56.3,
+      "sugars_unit": "g",
+      "sugars_value": 56.3
+    },
+    "nutrition_data": "on",
+    "nutrition_data_prepared_per": "100g",
+    "nutrition_grades": "e",
+    "product_name": "Nutella",
+    "product_name_de": "Nutella",
+    "product_name_en": "Nutella",
+    "product_quantity": 400,
+    "product_quantity_unit": "g",
+    "quantity": "400.0 g",
+    "traces_tags": [
+      "en:milk",
+      "en:nuts",
+      "en:soybeans"
+    ]
+  },
+  "result": {
+    "id": "product_found",
+    "lc_name": "Product found",
+    "name": "Product found"
+  },
+  "status": "success",
+  "warnings": []
+}

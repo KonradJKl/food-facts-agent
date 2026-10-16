@@ -1,0 +1,338 @@
+{
+  "hits": [
+    {
+      "code": "4260188784710",
+      "brands": [
+        "My muesli"
+      ],
+      "quantity": "85g",
+      "countries_tags": [
+        "en:france",
+        "en:germany"
+      ],
+      "nutrition_grades": "a",
+      "nutriments": {
+        "carbohydrates_100g": 56.1,
+        "energy-kcal_100g": 383,
+        "energy-kj_100g": 1608,
+        "fat_100g": 11,
+        "fiber_100g": 9,
+        "proteins_100g": 10.4,
+        "salt_100g": 0.03,
+        "saturated-fat_100g": 1.5,
+        "sodium_100g": 0.012,
+        "sugars_100g": 12.6
+      },
+      "product_name": "My muesli",
+      "product_name_de": "Beere"
+    },
+    {
+      "code": "4251680801722",
+      "brands": [
+        "My Muesli"
+      ],
+      "quantity": "1pcs",
+      "countries_tags": [
+        "en:germany"
+      ],
+      "nutrition_grades": "unknown",
+      "product_name": "Sylter Müsli",
+      "product_name_de": "Sylter Müsli"
+    },
+    {
+      "code": "4058172307188",
+      "brands": [
+        "dm Bio"
+      ],
+      "quantity": "750 g",
+      "countries_tags": [
+        "en:france",
+        "en:germany"
+      ],
+      "nutrition_grades": "c",
+      "nutriments": {
+        "carbohydrates_100g": 65,
+        "energy-kcal_100g": 346,
+        "energy-kj_100g": 1460,
+        "fat_100g": 4.2,
+        "fiber_100g": 9.7,
+        "proteins_100g": 7.4,
+        "salt_100g": 0.03,
+        "saturated-fat_100g": 0.7,
+        "sodium_100g": 0.012,
+        "sugars_100g": 32
+      },
+      "product_name": "Früchte Müsli",
+      "product_name_de": "Früchte Müsli"
+    },
+    {
+      "code": "4251680805683",
+      "brands": [
+        "My Muesli"
+      ],
+      "quantity": "575 g",
+      "countries_tags": [
+        "en:germany"
+      ],
+      "nutrition_grades": "a",
+      "nutriments": {
+        "carbohydrates_100g": 56.9,
+        "energy-kcal_100g": 387,
+        "energy-kj_100g": 1627,
+        "fat_100g": 9.8,
+        "fiber_100g": 9,
+        "proteins_100g": 13.4,
+        "salt_100g": 0.04,
+        "saturated-fat_100g": 1.8,
+        "sodium_100g": 0.016,
+        "sugars_100g": 4.1
+      },
+      "product_name": "Strawberry Cassis (wenig Zucker)",
+      "product_name_de": "Strawberry Cassis (wenig Zucker)",
+      "product_name_en": "My muesli strawberry cassis"
+    },
+    {
+      "code": "4061458007115",
+      "brands": [
+        "Knusperone",
+        " H. & J. Brüggen",
+        " Aldi"
+      ],
+      "quantity": "500 g",
+      "countries_tags": [
+        "en:germany"
+      ],
+      "nutrition_grades": "c",
+      "nutriments": {
+        "carbohydrates_100g": 57.3,
+        "energy-kcal_100g": 386,
+        "energy-kj_100g": 1620,
+        "fat_100g": 11.7,
+        "fiber_100g": 8.4,
+        "proteins_100g": 8.5,
+        "salt_100g": 0.28,
+        "saturated-fat_100g": 4.7,
+        "sodium_100g": 0.112,
+        "sugars_100g": 24.9
+      },
+      "product_name": "Premium-Müsli - Früchte & Nüsse",
+      "product_name_de": "Premium-Müsli - Früchte & Nüsse",
+      "product_name_en": "Premium Müsli"
+    },
+    {
+      "code": "4260188780606",
+      "brands": [
+        "my muesli"
+      ],
+      "quantity": "575 g",
+      "countries_tags": [
+        "en:germany"
+      ],
+      "nutrition_grades": "a",
+      "nutriments": {
+        "carbohydrates_100g": 28.6,
+        "energy-kcal_100g": 407,
+        "fat_100g": 16.4,
+        "fiber_100g": 11,
+        "proteins_100g": 30.3,
+        "salt_100g": 0.2,
+        "saturated-fat_100g": 2.6,
+        "sodium_100g": 0.08,
+        "sugars_100g": 10.4
+      },
+      "product_name": "Whey Protein Müsli",
+      "product_name_de": "whey protein"
+    },
+    {
+      "code": "4016249198275",
+      "brands": [
+        "Allos"
+      ],
+      "quantity": "500g",
+      "countries_tags": [
+        "en:germany"
+      ],
+      "nutrition_grades": "a",
+      "nutriments": {
+        "carbohydrates_100g": 59,
+        "energy-kcal_100g": 355,
+        "energy-kj_100g": 1493,
+        "fat_100g": 6,
+        "fiber_100g": 9.6,
+        "proteins_100g": 12,
+        "salt_100g": 0.03,
+        "saturated-fat_100g": 1,
+        "sodium_100g": 0.012,
+        "sugars_100g": 13
+      },
+      "product_name": "Das Ungesüßte Beeren-Müsli",
+      "product_name_de": "Das Ungesüßte Beeren-Müsli"
+    },
+    {
+      "code": "29099900",
+      "brands": [
+        "Gletscherkrone"
+      ],
+      "quantity": "1000 g",
+      "countries_tags": [
+        "en:germany"
+      ],
+      "nutrition_grades": "a",
+      "nutriments": {
+        "carbohydrates_100g": 53.5,
+        "energy-kcal_100g": 375,
+        "energy-kj_100g": 1574,
+        "fat_100g": 10.5,
+        "fiber_100g": 9.9,
+        "proteins_100g": 11.1,
+        "salt_100g": 0.07,
+        "saturated-fat_100g": 2.7,
+        "sodium_100g": 0.028,
+        "sugars_100g": 11.1
+      },
+      "product_name": "Traubenzucker müsli",
+      "product_name_de": "Traubenzucker müsli"
+    },
+    {
+      "code": "4260249142466",
+      "brands": [
+        "Frechefreunde",
+        "Erdbär"
+      ],
+      "quantity": "200 g",
+      "countries_tags": [
+        "en:germany"
+      ],
+      "nutrition_grades": "a",
+      "nutriments": {
+        "carbohydrates_100g": 59,
+        "energy-kcal_100g": 344,
+        "fat_100g": 5.7,
+        "fiber_100g": 8.9,
+        "proteins_100g": 9.7,
+        "salt_100g": 0,
+        "saturated-fat_100g": 1.1,
+        "sodium_100g": 0,
+        "sugars_100g": 10
+      },
+      "product_name": "Erdbär Freches Müsli Banane, Apfel & Blaubeere",
+      "product_name_de": "Erdbär Freches Müsli Banane, Apfel & Blaubeere",
+      "product_name_en": "Freche Freunde Banane, Apfel & Blaubeere Müsli"
+    },
+    {
+      "code": "4016249073510",
+      "brands": [
+        "Allos"
+      ],
+      "quantity": "500 g",
+      "countries_tags": [
+        "en:germany"
+      ],
+      "nutrition_grades": "a",
+      "nutriments": {
+        "carbohydrates_100g": 59,
+        "energy-kcal_100g": 353,
+        "fat_100g": 5.8,
+        "fiber_100g": 10,
+        "proteins_100g": 11,
+        "salt_100g": 0.03,
+        "saturated-fat_100g": 0.9,
+        "sodium_100g": 0.012,
+        "sugars_100g": 14
+      },
+      "product_name": "Der Klassiker Guten Morgen Müsli",
+      "product_name_de": "Der Klassiker Guten Morgen Müsli"
+    }
+  ],
+  "aggregations": null,
+  "facets": {},
+  "charts": {},
+  "page": 1,
+  "page_size": 10,
+  "page_count": 138,
+  "debug": {
+    "query": {
+      "query": {
+        "bool": {
+          "should": [
+            {
+              "match_phrase": {
+                "product_name.de": {
+                  "query": "muesli",
+                  "boost": 2.0
+                }
+              }
+            },
+            {
+              "match_phrase": {
+                "generic_name.de": {
+                  "query": "muesli",
+                  "boost": 2.0
+                }
+              }
+            },
+            {
+              "match_phrase": {
+                "categories.de": {
+                  "query": "muesli",
+                  "boost": 2.0
+                }
+              }
+            },
+            {
+              "match_phrase": {
+                "labels.de": {
+                  "query": "muesli",
+                  "boost": 2.0
+                }
+              }
+            },
+            {
+              "match_phrase": {
+                "brands": {
+                  "query": "muesli",
+                  "boost": 2.0
+                }
+              }
+            },
+            {
+              "multi_match": {
+                "query": "muesli",
+                "fields": [
+                  "product_name.de",
+                  "generic_name.de",
+                  "categories.de",
+                  "labels.de",
+                  "brands"
+                ]
+              }
+            }
+          ],
+          "filter": [
+            {
+              "bool": {
+                "must": [
+                  {
+                    "term": {
+                      "countries_tags": {
+                        "value": "en:germany"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      "size": 10,
+      "from": 0
+    }
+  },
+  "took": 9,
+  "timed_out": false,
+  "count": 1374,
+  "is_count_exact": true,
+  "warnings": null
+}

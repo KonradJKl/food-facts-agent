@@ -1,0 +1,24 @@
+{
+  "code": "4251680801722",
+  "errors": [],
+  "product": {
+    "allergens_tags": [],
+    "brands": "My Muesli",
+    "code": "4251680801722",
+    "countries_tags": [
+      "en:germany"
+    ],
+    "nutrition_grades": "unknown",
+    "product_name": "Sylter Müsli",
+    "product_name_de": "Sylter Müsli",
+    "quantity": "1pcs",
+    "traces_tags": []
+  },
+  "result": {
+    "id": "product_found",
+    "lc_name": "Product found",
+    "name": "Product found"
+  },
+  "status": "success",
+  "warnings": []
+}
