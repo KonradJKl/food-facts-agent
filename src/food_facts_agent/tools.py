@@ -1,7 +1,7 @@
 import json
 from typing import Any
 
-from anthropic.types import ToolParam
+from anthropic.types.beta import BetaToolParam
 
 from food_facts_agent.off_client import OFFClient, OFFError
 
@@ -22,7 +22,7 @@ SEARCH_PAGE_SIZE = 20
 
 # No regex for the barcode: with strict mode the model could not pass on a wrong barcode
 # from the user and might change digits instead. The client rejects it with a clear error.
-TOOLS: list[ToolParam] = [
+TOOLS: list[BetaToolParam] = [
     {
         "name": "get_product",
         "description": (
