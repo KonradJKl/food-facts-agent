@@ -8,6 +8,7 @@ from anthropic.types.beta import (
     BetaMessage,
     BetaMessageParam,
     BetaTextBlock,
+    BetaTextBlockParam,
     BetaToolResultBlockParam,
     BetaToolUseBlock,
 )
@@ -50,13 +51,18 @@ def run_agent(
     system: str,
     max_steps: int = MAX_STEPS,
 ) -> AgentResult:
+    # The breakpoint on the system prompt lets separate runs share the cached tools and
+    # prompt; the top-level cache_control below caches the growing conversation of one run.
+    system_blocks: list[BetaTextBlockParam] = [
+        {"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}
+    ]
     messages: list[BetaMessageParam] = [{"role": "user", "content": question}]
     tool_calls: list[ToolCall] = []
     for step in range(1, max_steps + 1):
         response = llm.beta.messages.create(
             model=model,
             max_tokens=MAX_TOKENS,
-            system=system,
+            system=system_blocks,
             tools=TOOLS,
             messages=messages,
             output_config={"effort": EFFORT},

@@ -93,7 +93,9 @@ def test_answer_without_tools_sends_one_request(tool_runs: list) -> None:
         {
             "model": "claude-opus-5-5",
             "max_tokens": agent.MAX_TOKENS,
-            "system": "Test prompt",
+            "system": [
+                {"type": "text", "text": "Test prompt", "cache_control": {"type": "ephemeral"}}
+            ],
             "tools": TOOLS,
             "messages": [{"role": "user", "content": QUESTION}],
             "output_config": {"effort": "medium"},
@@ -335,6 +337,9 @@ def test_sdk_builds_the_expected_http_requests(
     assert requests[0].headers["anthropic-beta"] == agent.FALLBACK_BETA
     assert first["fallbacks"] == "default"
     assert first["cache_control"] == {"type": "ephemeral"}
+    assert first["system"] == [
+        {"type": "text", "text": "Test prompt", "cache_control": {"type": "ephemeral"}}
+    ]
     assert first["output_config"] == {"effort": "medium"}
     assert [tool["strict"] for tool in first["tools"]] == [True, True]
     assert second["messages"][1]["content"][0] == {
