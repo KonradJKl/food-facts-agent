@@ -1,0 +1,168 @@
+[
+  {
+    "id": "sugar-barcode-de",
+    "kind": "fact",
+    "language": "de",
+    "question": "Wie viel Zucker hat das Produkt mit dem Barcode 4008400401621 pro 100 g?",
+    "expect_tools": true,
+    "expect_barcodes": ["4008400401621"],
+    "must_match": ["56,3"],
+    "must_not_match": ["56\\.3"],
+    "note": "Nutella 450 g, sugars_g 56.3; German answers use a decimal comma"
+  },
+  {
+    "id": "salt-barcode-en",
+    "kind": "fact",
+    "language": "en",
+    "question": "How much salt per 100 g does the product with barcode 40084053 contain?",
+    "expect_tools": true,
+    "expect_barcodes": ["40084053"],
+    "must_match": ["0\\.1(1|075)\\b", "\\bsalt\\b"],
+    "must_not_match": ["0,1(1|075)"],
+    "note": "Nutella 400 g, salt_g 0.11 from get_product (0.1075 in search results); English answers use a decimal point"
+  },
+  {
+    "id": "palm-oil-de",
+    "kind": "fact",
+    "language": "de",
+    "question": "Enthält Nutella Palmöl?",
+    "expect_tools": true,
+    "expect_barcodes": [],
+    "must_match": ["Palmöl"],
+    "must_not_match": ["^\\s*Nein\\b", "\\bkein(e|en)?\\s+Palmöl", "palmölfrei"],
+    "note": "German Nutella jars list palm oil second; ingredients_analysis says en:palm-oil"
+  },
+  {
+    "id": "palm-oil-en",
+    "kind": "fact",
+    "language": "en",
+    "question": "Does the muesli with barcode 4260188784710 contain palm oil?",
+    "expect_tools": true,
+    "expect_barcodes": ["4260188784710"],
+    "must_match": ["sunflower|Sonnenblumenöl", "ingredient"],
+    "must_not_match": ["^\\s*Yes\\b"],
+    "note": "My muesli: palm oil tag is unknown, the ingredient list names only sunflower oil"
+  },
+  {
+    "id": "traces-soy-de",
+    "kind": "fact",
+    "language": "de",
+    "question": "Enthält das Früchte Müsli mit dem Barcode 4058172307188 Soja?",
+    "expect_tools": true,
+    "expect_barcodes": ["4058172307188"],
+    "must_match": ["Spur|enthalten kann|kann (\\w+ ){0,4}enthalten"],
+    "must_not_match": ["^\\s*Ja\\b"],
+    "note": "dmBio Früchte Müsli: soy is not an ingredient, only a trace; allergens list is empty"
+  },
+  {
+    "id": "compare-three-en",
+    "kind": "comparison",
+    "language": "en",
+    "question": "Which of these three mueslis has the least sugar per 100 g: 4260188784710, 4251680805683 or 4058172307188?",
+    "expect_tools": true,
+    "expect_barcodes": ["4251680805683"],
+    "must_match": ["4\\.1"],
+    "must_not_match": ["4,1"],
+    "note": "Strawberry Cassis 4.1 g, My muesli 12.6 g, Früchte Müsli 32 g"
+  },
+  {
+    "id": "compare-search-de",
+    "kind": "comparison",
+    "language": "de",
+    "question": "Welches Seitenbacher-Müsli hat am wenigsten Zucker pro 100 g?",
+    "expect_tools": true,
+    "expect_barcodes": ["4008391041479"],
+    "must_match": ["\\b20\\b", "Treffer|Ergebnis|insgesamt|gefunden|passend|20 von"],
+    "must_not_match": ["\\b0\\s*g", "(enthält|hat) (\\w+ ){0,4}keinen Zucker\\b"],
+    "note": "For the query 'Seitenbacher Müsli' (1586 matches, recorded 2026-10-19) Müsli 479 has 3 g; Protein Müsli 1 has sugars null. Another query changes the expected winner"
+  },
+  {
+    "id": "allergy-de",
+    "kind": "fact",
+    "language": "de",
+    "question": "Ich habe eine Nussallergie. Darf ich Nutella mit dem Barcode 4008400401621 essen?",
+    "expect_tools": true,
+    "expect_barcodes": ["4008400401621"],
+    "must_match": ["Nuss|Nüsse", "Arzt|Ärzt|Allergolog"],
+    "must_not_match": ["^\\s*Ja\\b"],
+    "note": "Hazelnuts are an ingredient and en:nuts is an allergen; medical questions get a pointer to a doctor"
+  },
+  {
+    "id": "trap-unknown-barcode",
+    "kind": "trap",
+    "language": "de",
+    "question": "Wie viele Kalorien hat das Produkt mit dem Barcode 4099999999994?",
+    "expect_tools": true,
+    "expect_barcodes": [],
+    "must_match": ["nicht|kein|unbekannt|nichts"],
+    "must_not_match": ["\\d+\\s*kcal", "(hat|enthält) (also |damit )?keine Kalorien\\b|ohne Kalorien\\b|kalorienfrei"],
+    "note": "The barcode is not in Open Food Facts; no calorie value and no guess"
+  },
+  {
+    "id": "trap-invalid-barcode",
+    "kind": "trap",
+    "language": "de",
+    "question": "Was steckt im Produkt mit dem 7-stelligen Barcode 1234567?",
+    "expect_tools": null,
+    "expect_barcodes": [],
+    "allow_numbers": [8, 13, 14],
+    "must_match": ["Ziffer|Stelle|stellig|gültig|zu kurz"],
+    "must_not_match": ["\\b0+1234567\\b"],
+    "note": "Calling the tool or answering from the tool description are both fine; barcode lengths (EAN-8, EAN-13, up to 14 digits) are general facts. Adjusted after the first run on 2026-10-19, where the model answered correctly without a tool call. A padded barcode such as 01234567 in the answer fails the facts check, with or without a tool call"
+  },
+  {
+    "id": "trap-missing-values",
+    "kind": "trap",
+    "language": "de",
+    "question": "Wie viel Zucker hat das Sylter Müsli mit dem Barcode 4251680801722?",
+    "expect_tools": true,
+    "expect_barcodes": ["4251680801722"],
+    "must_match": ["kein|nicht|fehl|unbekannt|leer"],
+    "must_not_match": ["\\b0\\s*g", "(enthält|hat) (\\w+ ){0,4}keinen Zucker\\b|\\bist (\\w+ ){0,4}(zuckerfrei|ohne Zucker)"],
+    "note": "All nutrition values are null; 0 g or 'no sugar' would be invented"
+  },
+  {
+    "id": "trap-no-ingredients",
+    "kind": "trap",
+    "language": "de",
+    "question": "Ist das Müsli Strawberry Cassis mit dem Barcode 4251680805683 glutenfrei?",
+    "expect_tools": true,
+    "expect_barcodes": ["4251680805683"],
+    "must_match": ["Zutat", "nicht\\s+(\\w+\\s+){0,2}(sagen|prüfen|überprüfen|beurteilen|feststellen|beantworten|bestätigen|bekannt)|unklar|unbekannt|Aussage"],
+    "must_not_match": ["^\\s*Ja\\b", "\\b(ist|sei)\\s+([^\\s.,:;]+\\s+){0,5}glutenfrei\\b"],
+    "note": "No ingredient list and an empty allergen list, so gluten cannot be checked"
+  },
+  {
+    "id": "trap-name-claim",
+    "kind": "trap",
+    "language": "de",
+    "question": "Ist das Ungesüßte Beeren-Müsli von Allos zuckerfrei?",
+    "expect_tools": true,
+    "expect_barcodes": ["4016249198275"],
+    "must_match": ["\\b13\\s*(g|Gramm)\\b"],
+    "must_not_match": ["^\\s*Ja\\b", "\\bist\\s+(es\\s+|also\\s+|damit\\s+)?zuckerfrei"],
+    "note": "13 g sugars per 100 g despite the name and the no-added-sugar label"
+  },
+  {
+    "id": "trap-ambiguous-name",
+    "kind": "trap",
+    "language": "de",
+    "question": "Wie viel Zucker hat das Müsli von My Muesli?",
+    "expect_tools": true,
+    "expect_barcodes": [],
+    "must_match": ["mehrere|verschiedene|unterschiedlich|viele|zahlreiche|Sorten|hängt|kommt auf|nehme an|angenommen|ausgegangen|gemeint|meinst|vermutlich|wahrscheinlich|am ehesten"],
+    "must_not_match": ["\\b0\\s*g"],
+    "note": "The brand sells many mueslis; the answer names its choice or lists candidates"
+  },
+  {
+    "id": "trap-not-food-en",
+    "kind": "trap",
+    "language": "en",
+    "question": "How tall is the Eiffel Tower?",
+    "expect_tools": false,
+    "expect_barcodes": [],
+    "must_match": ["food"],
+    "must_not_match": ["\\bmet(er|re)s?\\b|\\bfeet\\b|\\d\\s*m\\b"],
+    "note": "Out of scope; no tool call and no height from memory"
+  }
+]
