@@ -23,7 +23,7 @@ food-facts = "food_facts_agent.cli:main"
 [project.optional-dependencies]
 dev = [
     "pytest>=9.1",
-    "ruff>=0.17",
+    "ruff==0.17.1",
 ]
 
 [tool.ruff]
